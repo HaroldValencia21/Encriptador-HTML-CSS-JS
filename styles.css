@@ -147,14 +147,14 @@ header{
 
 
 
-.copiar{
+#copiar{
     background: var(--naranja);
     border-radius: 10px;
     margin-bottom:3.73rem;
     transition: .5s all;
 }
 
-.copiar:hover{
+#copiar:hover{
     background-color: var(--grisClaro);
 }
 
@@ -178,5 +178,173 @@ footer{
     width: 100%;
     text-align: center;
     padding: 4rem;
+}
+
+
+/*Responsive laptop*/
+
+@media screen and (max-width:1440px){
+    
+    .nivelEncriptador, .boton{
+        width: 30rem;
+    }
+    .cuadroTexto{
+        width: 40rem; 
+    }
+
+}
+
+@media screen and (max-width:1280px){
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+    .tituloNav{
+        font-size: 2.5rem;
+    }
+    .nivelEncriptador, .boton{
+        width: 25rem;
+        font-size: 2rem;
+
+    }
+    footer{
+        padding: 2rem;
+    }
+    .cuadroTexto{
+        width: 38rem; 
+        height: 30rem;
+    }
+    #salida{
+        height: 20rem;
+    }
+}
+
+/*Responsive Tablet*/
+@media screen and (max-width:768px){
+    /* .nivelesEncriptado{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+    } */
+
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+    .tituloNav{
+        font-size: 2.5rem;
+    }
+    .nivelEncriptador, .boton{
+        width: 15rem;
+        font-size: 2rem;
+
+    }
+    .cuadrosBotones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding: 2rem;
+        
+    }
+    footer{
+        padding: 2rem;
+    }
+    .cuadroTexto{
+        width: 38rem; 
+        height: 30rem;
+    }
+    
+    #salida{
+        height: 20rem;
+    }
+    #copiar{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-left: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+/*Responsive celular*/
+
+@media screen and (max-width:390px){
+    /* .nivelesEncriptado{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+    } */
+
+    .tituloPrincipal{
+        font-size: 3rem;
+    }
+    .tituloNav{
+        font-size: 2rem;
+    }
+    .nivelesEncriptado{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+    }
+    .nivelEncriptador, .boton{
+        
+        width: 15rem;
+        font-size: 1.5rem;
+
+    }
+    .cuadrosBotones{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(5%, 50%, 5%, 40%); 
+        gap: 1.5rem;
+        
+    }
+    #ingreso, #salida{
+        width:35rem;
+    }
+    .contenedorBotones{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        gap: 1px;
+    }
+    .contenedorEntrada{
+        
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0  auto;
+    }
+    #copiar{
+        width: 80%;
+        margin: 0  auto;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contenedorSalida{
+        margin: 0  auto;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    footer{
+        padding: 2rem;
+    }
+    .cuadroTexto{
+        width: 30rem; 
+        height: 30rem;
+    }
+    #salida{
+        height: 20rem;
+    }
+    #encriptar, #desencriptar{
+        width: 15rem;
+    }
+    .botones, #copiar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer{
+        position: relative;
+    }
+    
 }
 
