@@ -20,17 +20,31 @@
         
         <div class="nivelesEncriptado">
             <h2 class="tituloNav">Nivel de encriptado</h2>
-            <button class="nivelEncriptador">Nivel 1</button>
-            <button class="nivelEncriptador">Nivel 2</button>
-            <button class="nivelEncriptador">Nivel 3</button>
+
+            <form action="" class="contenedorNiveles" id="form">
+                
+                <input name="niveles" type="radio" id="1" value="1" checked>
+                <label class="nivel" for="1">Nivel 1</label>
+            
+            
+                <input name="niveles" type="radio" id="2" value="2">
+                <label class="nivel" for="2">Nivel 2</label>
+            
+            
+                <input name="niveles" type="radio" id="3" value="3">
+                <label class="nivel" for="3">Nivel 3</label>
+                
+            </form>
         </div>
+
+        
     </header>
     <main >
         <div class="cuadrosBotones">
 
             <section class="contenedorEntrada">
-                <div class="cuadroTexto " id="ingreso">
-                    <p>Digite el texto que desea encriptar</p>
+                <div class="cuadroTexto" >
+                    <textarea  name="" id="ingreso" placeholder="Escribe un texto"></textarea>
                 </div>
             </section>
     
@@ -47,8 +61,8 @@
             
     
             <section class="contenedorSalida">                
-                <div class="cuadroTexto" id="salida">
-                    <p>Texto encriptado</p>
+                <div class="cuadroTexto" >
+                    <p id="salida">Texto encriptado</p>
                 </div>
             </section>
         </div>
